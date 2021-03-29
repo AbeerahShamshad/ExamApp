@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Exam App</string>
+    <string name="Fname">First Name</string>
+    <string name="Lname">Last Name</string>
+    <string name="Gender">Gender</string>
+    <string name="Email">Email</string>
+    <string name="Phone">03**</string>
+    <string name="signup_txt_btn">Sign Up</string>
+    <string name="Category">Category</string>
+    <string name="Product">Product</string>
+    <string name="Option">Option</string>
+    <string name="Delivery">Delivery</string>
+    <string name="self_pick">Self-pick</string>
+    <string name="Date">Date</string>
+    <string name="Time">Time</string>
+    <string name="Quantity">Quantity</string>
+    <string name="Plus"> + </string>
+    <string name="Minus"> - </string>
+    <string name="Price">Price</string>
+    <string name="Order">Submit Order</string>
+    <string name="Exitbtn">Back</string>
+</resources>

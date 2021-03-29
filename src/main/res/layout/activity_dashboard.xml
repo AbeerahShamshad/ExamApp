@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView_Eamil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Category"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="280dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Product"
+                    android:textSize="25dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_product"
+                    android:layout_width="280dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/Option"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:layout_width="290dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/RG_"
+                    android:layout_marginLeft="39dp"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Check_fun"
+                        android:text="@string/Delivery" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Check_fun"
+                        android:text="@string/self_pick" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Date"
+                    android:textSize="25dp" />
+
+                <DatePicker
+                    android:id="@+id/datePicker1"
+                    android:layout_width="279dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="13dp"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/Time"
+                    android:textSize="25dp" />
+
+                <TimePicker
+                    android:id="@+id/timePicker1"
+                    android:layout_width="279dp"
+                    android:layout_height="180dp"
+
+                    android:timePickerMode="spinner"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Quantity"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btn_Quantity_increment"
+                    android:layout_width="45dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="19dp"
+                    android:text="@string/Plus" />
+
+                <EditText
+                    android:id="@+id/Quantity_value"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="19dp"
+                    android:background="@null"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:padding="11dp"
+                    android:text="0" />
+                <Button
+                    android:id="@+id/btn_Quantity_decrement"
+                    android:layout_width="45dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/Minus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Price"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/price_value"
+                    android:layout_width="76dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="7dp"
+                    android:hint="0"
+                    android:paddingLeft="30dp"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Order_palcement"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Order" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
